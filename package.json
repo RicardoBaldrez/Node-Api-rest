@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
-
   },
   "keywords": [],
   "author": "",
@@ -17,5 +16,8 @@
     "eslint-plugin-import": "^2.25.4",
     "nodemon": "^2.0.15",
     "sucrase": "^3.20.3"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
   }
 }
