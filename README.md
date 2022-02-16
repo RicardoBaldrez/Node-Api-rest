@@ -67,3 +67,6 @@ O Sequelize é um ORM (Object-Relational Mapper) para Node. js, que tem suporte 
 -> npx sequelize-cli migration:generate --name=students
 ### Rodando o comando para criar a tabela
 -> npx sequelize db:migrate
+
+### Rodando o comando para desfazer a migrate
+-> npx sequelize db:migrate:undo
