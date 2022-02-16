@@ -34,7 +34,7 @@
 ### LINUX (UBUNTU)
 -> sudo apt install mysql-workbench
 -> sudo snap install insomnia
-# FAÇA O DOWNLOAD PARA WINDOWS
+## FAÇA O DOWNLOAD PARA WINDOWS
 https://dev.mysql.com/downloads/workbench/
 https://insomnia.rest/download/
 
@@ -57,7 +57,7 @@ Permiti que usemos o import e export dos módulos dentro do node
 ## .env
 ### Baixando
 -> npm i dotenv
-Após isso, pode-se usar o .env(file)
+Após isso, pode-se usar as variáveis de ambiente do arquivo .env(file)
 
 ## Sequelize
 O Sequelize é um ORM (Object-Relational Mapper) para Node. js, que tem suporte aos bancos de dados PostgreSQL, MariaDB, MySQL, SQLite e MSSQL, como ORM ele faz o mapeamento de dados relacionais (tabelas, colunas e linhas) para objetos Javascript.
