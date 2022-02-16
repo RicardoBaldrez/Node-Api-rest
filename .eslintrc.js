@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     // Regra que não mostra warning nos consoles da aplicação
     // 'no-console': 'off',
-    "class-methods-use-this": "off",
+    'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
   },
 };
