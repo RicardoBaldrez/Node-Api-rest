@@ -61,12 +61,20 @@ Após isso, pode-se usar as variáveis de ambiente do arquivo .env(file)
 
 ## Sequelize
 O Sequelize é um ORM (Object-Relational Mapper) para Node. js, que tem suporte aos bancos de dados PostgreSQL, MariaDB, MySQL, SQLite e MSSQL, como ORM ele faz o mapeamento de dados relacionais (tabelas, colunas e linhas) para objetos Javascript.
+
 ### Baixando
 -> npm install --save sequelize
+
+#### MIGRATION
 ### Criando a tabela 'students' através de uma migration
 -> npx sequelize-cli migration:generate --name=students
 ### Rodando o comando para criar a tabela
 -> npx sequelize db:migrate
-
 ### Rodando o comando para desfazer a migrate
 -> npx sequelize db:migrate:undo
+
+#### SEED
+### Criando a seed
+-> npx sequelize seed:generate --name users-create
+### Rodando o comando que executa a seed
+-> npx sequelize db:seed:all
