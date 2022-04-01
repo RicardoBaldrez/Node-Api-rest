@@ -78,3 +78,8 @@ O Sequelize é um ORM (Object-Relational Mapper) para Node. js, que tem suporte 
 -> npx sequelize seed:generate --name users-create
 ### Rodando o comando que executa a seed
 -> npx sequelize db:seed:all
+
+### Multer
+## Por padrão o express não suporta upload de arquivos e então utilizaremos o multer
+## Instalando
+-> npm i multer
