@@ -1,28 +1,28 @@
-import User from '../models/User';
 import jwt from 'jsonwebtoken';
+import User from '../models/User';
 
 class TokenController {
   async store(req, res) {
     const { email = '', password = '' } = req.body;
 
-    if(!email || !password) {
+    if (!email || !password) {
       return res.status(401).json({
         errors: ['Invalid credentials'],
-      })
+      });
     }
 
     const user = await User.findOne({ where: { email } });
 
-    if(!user) {
+    if (!user) {
       return res.status(401).json({
         errors: ['User not exist'],
-      })
+      });
     }
 
-    if(!(await user.passwordIsValid(password))) {
+    if (!(await user.passwordIsValid(password))) {
       return res.status(401).json({
         errors: ['Invalid password'],
-      })
+      });
     }
 
     const { id } = user;
@@ -31,7 +31,7 @@ class TokenController {
       expiresIn: process.env.TOKEN_EXPIRATION,
     });
 
-    return res.json({ token: token });
+    return res.json({ token, user: { name: user.name, id, email } });
   }
 }
 
